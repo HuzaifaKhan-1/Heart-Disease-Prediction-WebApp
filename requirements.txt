@@ -1,5 +1,7 @@
 streamlit
 numpy
 scikit-learn
-fpdf
 plotly
+fpdf
+keras
+tensorflow

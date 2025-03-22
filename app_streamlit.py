@@ -4,9 +4,11 @@ import pickle
 from fpdf import FPDF
 import plotly.graph_objs as go
 from sklearn.preprocessing import StandardScaler
+from tensorflow.keras.models import load_model
+
 
 # Load the trained model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load_model(open("model.pkl", "rb"))
 scaler = StandardScaler()
 # App title and description
 st.markdown("""
